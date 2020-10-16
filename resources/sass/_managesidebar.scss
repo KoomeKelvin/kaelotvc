@@ -1,0 +1,102 @@
+#admin-side-bar{
+    position:fixed;
+    top:4rem;
+    height:100vh;
+    overflow-y:auto;
+    background-color: white;
+    width:200px;
+    left:-200px;
+    padding-top:20px;
+    z-index: 100;
+    transition: left 0.3s ease-in-out;
+  &.toggle-the-menu {
+    left: 0;
+    transition: left 0.3s ease-in-out;
+  }
+    @media only screen and (min-width:1024px){
+        left:0;
+    }
+}
+#show-hide-menu{
+    transition: 0.3s;
+    &.toggle-the-menu {
+      transition: 0.3s;
+      transform: rotateY(180deg);
+    }
+ 
+
+}
+.sidebar-nav{
+    position:absolute;
+    //top:0;
+    width: 200px;
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.sidebar-nav li{
+    text-indent:20px;
+    line-height:40px;
+    margin:2px;
+}
+.sidebar-nav li p{
+text-indent:5px;
+line-height:5px;
+font-size:16px;
+margin:5px;
+color:grey;
+
+
+}
+.sidebar-nav li a{
+    display:block;
+    text-decoration:none;
+    color:black;
+}
+.sidebar-nav li a:hover{
+text-decoration:none;
+color:whitesmoke;
+ background-color: rgb(159, 167, 170);
+
+}
+
+// This is the css for the working area 
+.working-area{
+    top:4rem;
+    right:0;
+    @media only screen and (min-width:1024px){
+        left:200px;
+        position:absolute;
+    }
+}
+.the_submit{
+    margin: 10px;
+}
+.the_parent::after{
+    font-family:FontAwesome;
+    font-size: 12px;
+    float:right;
+    color:hsl(17, 30%, 24%);
+   content: "\f0ab";
+}
+.the_parent.is-open::after{
+    font-family:FontAwesome;
+    font-size: 14px;
+    float:right;
+    color:hsl(17, 30%, 24%);
+    content: "\f0aa";
+}
+
+.the_child{
+    max-height: 0;
+    overflow:hidden;
+    list-style: none;
+    margin:0;
+    transition:max-height 0.2s ease-in-out;
+    border-right:1px solid hsl(17, 30%, 24%);;
+    border-left:1px solid  hsl(17, 30%, 24%);;
+
+}
+.active-links{
+    background-color: hsl(17, 43%, 83%);
+}

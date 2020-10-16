@@ -1,0 +1,19 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+// font awesome
+@import 'node_modules/font-awesome/scss/font-awesome';
+
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+//@import 'bootstrap-datetimepicker.scss';
+@import 'overwrites';
+// css for the sidebar 
+@import 'managesidebar';
+// Front end css
+@import 'frontend';
+//import summernote
+@import 'node_modules/summernote/dist/summernote-bs4';

@@ -1,0 +1,138 @@
+.nav-item{
+
+.dropdown-menu{
+    top:110%;
+    &>a{
+
+        &:hover{
+background-color: hsl(200, 50%, 70%);
+color:hsl(210, 82%,13%);
+        }
+    }
+    &>li>a{
+        &:hover{
+            background-color: hsl(200, 50%, 70%);
+            color:hsl(210, 82%,13%);
+                    } 
+    }
+
+}
+.dropdown-menu-2{
+    float:left;
+}
+
+}
+.navbar-toggler{
+    border:none;
+}
+.carousel-caption >h3{
+    color: hsl(185, 50%, 70%);
+    font-size:14px;
+    text-shadow:0 0 2px hsla(0,0%,0%, .4);
+}
+.carousel-caption >p{
+    color: hsl(185, 50%, 70%);
+    text-shadow:0 0 2px hsla(0,0%,0%, .4);
+}
+.profile-pic{
+    height:45px;
+    width:45px;
+    border-radius: 50%;
+}
+.image-wrap{
+    width:70px;
+    height:70px;
+    border-radius: 50%;
+    float:left;
+}
+.author-wrap{
+    float:left;
+    margin-left:15px;
+}
+.author-wrap>h4{
+    margin: 5px 0;
+    font-size:14px;
+}
+.author-comment{
+    clear:both;
+    margin-left:75px;
+    font-size:16px;
+    line-height:1.3rem;
+}
+.comment-wrap{
+    margin-bottom: 40px;
+}
+.author-time{
+    font-size: 11px;
+    font-style:italics;
+    color: #aaaaaa;
+}
+.dashboard_logo{
+    height:40px;
+}
+.navbar_color{
+background-color: hsl(210, 82%, 13%);
+}
+
+// carousel
+.carousel{
+    width:100%;
+    padding:0;
+}
+.carousel-caption >h2{
+    color: hsl(185, 50%, 70%);
+    font-size:10px;
+    text-shadow:2px 2px  hsl(185, 50%, 70%);
+}
+.carousel-item >img{
+    max-height:60vh;
+}
+.scroll-menu {
+    overflow-y: scroll;
+}
+.hero_padding{
+    padding:2em 5em;
+}
+.hero_heading{
+font-size:2em;
+color: hsl(185, 70%, 80%);
+font-weight:700px;
+font-family:scandia-web,sans-serif;
+letter-spacing: 0.3em;
+line-height:1em;
+@media only screen and (max-width:768px)
+{
+    font-size:1.5em;
+}
+}
+.hero_subheading
+{
+font-size:1.4em;
+color: hsl(185, 80%, 90%);
+font-weight:700px;
+font-family:scandia-web,sans-serif;
+line-height:1.2em;
+}
+.hero_subheading_profile
+{
+font-size:1.4em;
+color: hsl(185, 50%, 70%);
+font-weight:700px;
+display:flex;
+justify-content: center;
+padding:10px;
+font-family:scandia-web,sans-serif;
+line-height:1.2em;
+}
+.hero_image_cover{
+    padding:40px 0;
+    margin-top:0;
+    margin-bottom:0;
+    height:70vh;
+    @media only screen and (max-width:768px)
+    {
+        height:250px;
+        padding:50px 0;
+    }
+
+}
